@@ -93,8 +93,7 @@ max-width: 400px;
 /* Location, Phone, Email Section */
 .contact-list {
 list-style-type: none;
-margin-left: -30px;
-padding-right: 20px;
+margin: auto;
 }
 
 .list-item {
@@ -106,10 +105,6 @@ color: #aaa;
 font: 300 18px 'Lato', sans-serif;
 letter-spacing: 1.9px;
 color: #bbb;
-}
-
-.place {
-margin-left: 62px;
 }
 
 .phone {
@@ -133,26 +128,15 @@ text-decoration: none;
 
 
 /* Social Media Icons */
-.social-media-list {
+a.social-media {
 position: relative;
 font-size: 22px;
 text-align: center;
-width: 100%;
-margin: 0 auto;
 padding: 0;
-}
-
-.social-media-list a li {
-color: #fff;
-list-style: none;
-}
-
-.social-media-list a {
-position: relative; 
 display: inline-block;
 height: 60px;
 width: 60px;
-margin: 10px 3px;
+margin: 10px 10px;
 line-height: 60px;
 border-radius: 50%;
 color: #fff;
@@ -161,7 +145,7 @@ cursor: pointer;
 transition: all .2s ease-in-out;
 }
 
-.social-media-list a:after {
+a.social-media:after {
 content: '';
 position: absolute;
 top: 0;
@@ -175,17 +159,17 @@ box-shadow: 0 0 0 1px #fff;
 transition: all .2s ease-in-out;
 }
 
-.social-media-list a:hover {
+a.social-media:hover {
 background-color: #fff; 
 }
 
-.social-media-list a:hover:after {
+a.social-media:hover:after {
 opacity: 1;  
 transform: scale(1.12);
 transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
 }
 
-.social-media-list a:hover li {
+a.social-media:hover{
 color: #000;
 }
 

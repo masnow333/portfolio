@@ -15,7 +15,7 @@ function PortfolioComponent() {
 		{
 			previewURL: "https://masnow333.github.io/pokedex/",
 			url: "https://github.com/masnow333/pokedex",
-			image: "images/pokedex.jpeg",
+			image: "src/assets/images/pokedex.jpeg",
 			title: "Pokedex",
 			description:
 				"The Pokedex project is a frontend application fetching and displaying information from the Pokedex API",
@@ -23,21 +23,21 @@ function PortfolioComponent() {
 		{
 			previewURL: "https://masnow333.github.io/time-app/",
 			url: "https://github.com/masnow333/time-app",
-			image: "images/TimeApp.jpeg",
+			image: "src/assets/images/TimeApp.jpeg",
 			title: "Time app",
 			description: "There's an app that gives you, your current weather data",
 		},
 		{
 			previewURL: "https://masnow333.github.io/Earth-round-three.js/",
 			url: "https://github.com/masnow333/Earth-round-three.js",
-			image: "images/Earth.jpeg",
+			image: "src/assets/images/Earth.jpeg",
 			title: "Earth round",
 			description: "An animation using Three.js",
 		},
 		{
 			previewURL: "",
 			url: "https://github.com/masnow333/face_recognition",
-			image: "images/face.jpeg",
+			image: "src/assets/images/face.jpeg",
 			title: "Face recognition",
 			description: "A face recognition app.",
 		},
@@ -51,14 +51,14 @@ function PortfolioComponent() {
 		{
 			previewURL: "https://masnow333.github.io/write-and-delete/",
 			url: "https://github.com/masnow333/write-and-delete",
-			image: "images/WriteAndDelete.jpeg",
+			image: "src/assets/images/WriteAndDelete.jpeg",
 			title: "Write and delete",
 			description: "An animation of a word being written and deleted",
 		},
 		{
 			previewURL: "https://masnow333.github.io/three-in-line/",
 			url: "https://github.com/masnow333/three-in-line",
-			image: "images/ThreeInLine.jpeg",
+			image: "src/assets/images/ThreeInLine.jpeg",
 			title: "Three in line",
 			description: "The popular game three in line",
 		},
@@ -73,7 +73,7 @@ function PortfolioComponent() {
 	const comingSoonProject: Project = {
 		previewURL: "",
 		url: "#",
-		image: "images/coming-soon.jpg",
+		image: "src/assets/images/coming-soon.jpg",
 		title: "Coming Soon",
 		description: "",
 	};

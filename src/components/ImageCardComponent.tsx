@@ -17,17 +17,16 @@ const ImageCardComponent = ({
 }: ImageCardProps) => {
 	return (
 		<>
-			<div className="col-lg-4 mt-4">
-				<div className="card" style={{ height: "400px" }}>
+			<div className="col-lg-4 col-md-6 mt-4">
+				<div className="card mh-400">
 					<img
-						className="card-img-top"
-						src={image ? image : "images/code.jpg"}
+						className="card-img-top mh-220"
+						src={image ? image : "src/assets/images/code.jpg"}
 						alt="Card image"
-						style={{ height: "220px" }}
 					/>
 					<div className="card-body">
 						<h4 className="card-title">{title}</h4>
-						<p className="card-text" style={{ height: "60px" }}>
+						<p className="card-text mh-60">
 							{text}
 						</p>
 						<div className="text-center gap-2 d-flex justify-content-center">

@@ -1,9 +1,11 @@
-import "bootstrap/dist/css/bootstrap.css";
-import { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.css';
+import { useState } from 'react';
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 const NavComponent = () => {
 	const [darkScroll, setDarkScroll] = useState(false);
-	const header = document.querySelector(".navbar-dark");
-	console.log(header);
 	window.onscroll = function () {
 		const top = window.scrollY;
 		if (top >= 100) {
@@ -14,57 +16,26 @@ const NavComponent = () => {
 	};
 
 	return (
-		<nav
+		<Navbar
+			expand='lg'
 			className={`navbar navbar-expand-lg fixed-top navbar-dark navbarScroll ${
-				darkScroll ? "navbarDark" : ""
+				darkScroll ? 'navbarDark' : ''
 			}`}
 		>
-			<div className="container">
-				<a className="navbar-brand" href="#">
-					Jonathan
-				</a>
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span className="navbar-toggler-icon"></span>
-				</button>
-				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav ms-auto">
-						<li className="nav-item active">
-							<a className="nav-link" href="#home">
-								Home
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#about">
-								About
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#services">
-								Services
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#portfolio">
-								Portfolio
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#contact">
-								Contact
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+			<Container>
+				<Navbar.Brand href='#home'>Jonathan</Navbar.Brand>
+				<Navbar.Toggle aria-controls='basic-navbar-nav' />
+				<Navbar.Collapse id='basic-navbar-nav d-flex'>
+					<Nav className='ms-auto'>
+						<Nav.Link href='#home'>Home</Nav.Link>
+						<Nav.Link href='#about'>About</Nav.Link>
+						<Nav.Link href='#services'>Services</Nav.Link>
+						<Nav.Link href='#portfolio'>Portfolio</Nav.Link>
+						<Nav.Link href='#contact'>Contact</Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
 	);
 };
 

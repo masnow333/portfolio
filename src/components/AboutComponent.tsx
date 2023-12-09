@@ -1,13 +1,12 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "./AboutComponent.css"
 function AboutComponent() {
 	return (
 		<section id="about" className="min-vh-100">
 			<div className="container pt-3">
-				<h1 className="text-center">About Me</h1>
+				<h2 className="h1 text-center">About Me</h2>
 				<div className="row mt-5">
-					<div className="col-lg-4">
-						<img src="images/about.jpg" className="imageAboutPage" alt="" />
+					<div className="mb-5 col-sm-8 col-md-6 col-lg-4 col-xxl-3 mx-auto">
+						<img src="src/assets/images/about.jpg" className="w-100" alt="About image" />
 					</div>
 
 					<div className="col-lg-8">
