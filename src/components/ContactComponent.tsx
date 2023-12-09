@@ -80,12 +80,14 @@ const ContactComponent = () => {
 							<a
 								href='https://github.com/masnow333'
 								className='social-media contact-icon'
+								target="_blank"
 							>
 								<FontAwesomeIcon icon={faGithub} />
 							</a>
 							<a
 								href='https://www.linkedin.com/in/jonathan-fernando-triana-manrique'
 								className='social-media contact-icon'
+								target="_blank"
 							>
 								<FontAwesomeIcon icon={faLinkedin} />
 							</a>

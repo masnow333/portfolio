@@ -6,7 +6,7 @@ function AboutComponent() {
 				<h2 className="h1 text-center">About Me</h2>
 				<div className="row mt-5">
 					<div className="mb-5 col-sm-8 col-md-6 col-lg-4 col-xxl-3 mx-auto">
-						<img src="src/assets/images/about.jpg" className="w-100" alt="About image" />
+						<img src="images/about.jpg" className="w-100" alt="About image" />
 					</div>
 
 					<div className="col-lg-8">

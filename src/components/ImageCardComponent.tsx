@@ -21,7 +21,7 @@ const ImageCardComponent = ({
 				<div className="card mh-400">
 					<img
 						className="card-img-top mh-220"
-						src={image ? image : "src/assets/images/code.jpg"}
+						src={image ? image : "images/code.jpg"}
 						alt="Card image"
 					/>
 					<div className="card-body">
@@ -34,6 +34,7 @@ const ImageCardComponent = ({
 								href={preview}
 								className="btn btn-success"
 								hidden={preview === ""}
+								target="_blank"
 							>
 								preview
 							</a>
