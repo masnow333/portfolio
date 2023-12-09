@@ -21,7 +21,7 @@ const ImageCardComponent = ({
 				<div className="card" style={{ height: "400px" }}>
 					<img
 						className="card-img-top"
-						src={image ? image : "src/assets/images/code.jpg"}
+						src={image ? image : "images/code.jpg"}
 						alt="Card image"
 						style={{ height: "220px" }}
 					/>
